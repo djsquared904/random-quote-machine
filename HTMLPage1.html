@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
@@ -12,13 +14,25 @@
     <title>DJ's Random Quote Machine</title>
 </head>
 <body>
+    <div id="wrapper">
 
-    <div class="container-fluid" id="quote-box d-flex justify-content-center">
-        <div id="text">INSERT RANDOM QUOTES HERE</div>
-        <div id="author">INSERT QUOTE AUTHOR HERE</div>
-        <a id="tweet-quote" href="twitter.com/intent/tweet"><span class="fab fa-twitter" onClick="">Tweet</span></a>
-        <button id="new-quote" class="btn-success" onClick="">New Quote</button>
+        <h1>DJ's Random Quote Machine</h1>
+        <div class="container-fluid" id="quote-box">
+            <div id="quoteauth">
+                <div id="text"></div>
+                <div id="author"></div>
+            </div>
+            <div id="buttons">
+                <button type="button" class="btn btn-info">
+                    <a id="tweet-quote" href="twitter.com/intent/tweet"><span class="fab fa-twitter" onClick=""> Tweet</span></a>
+                </button>
+                <button id="new-quote" class="btn btn-success" onClick="displayQuote()">New Quote</button>
+            </div>
+        </div>
     </div>
-    <button></button>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+    <script src="Script1.js"></script>
 </body>
 </html>
